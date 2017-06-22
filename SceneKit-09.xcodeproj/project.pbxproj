@@ -15,6 +15,9 @@
 		8379D7451EFBAD880086C8C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8379D7431EFBAD880086C8C6 /* LaunchScreen.storyboard */; };
 		8379D7501EFBAD880086C8C6 /* SceneKit_09Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8379D74F1EFBAD880086C8C6 /* SceneKit_09Tests.m */; };
 		8379D75B1EFBAD880086C8C6 /* SceneKit_09UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8379D75A1EFBAD880086C8C6 /* SceneKit_09UITests.m */; };
+		8379D7691EFBAFA10086C8C6 /* box2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8379D7681EFBAFA10086C8C6 /* box2.jpg */; };
+		8379D76B1EFBC26F0086C8C6 /* fire.scnp in Resources */ = {isa = PBXBuildFile; fileRef = 8379D76A1EFBC26F0086C8C6 /* fire.scnp */; };
+		8379D76D1EFBC47F0086C8C6 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 8379D76C1EFBC47F0086C8C6 /* spark.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		8379D7561EFBAD880086C8C6 /* SceneKit-09UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SceneKit-09UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8379D75A1EFBAD880086C8C6 /* SceneKit_09UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneKit_09UITests.m; sourceTree = "<group>"; };
 		8379D75C1EFBAD880086C8C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8379D7681EFBAFA10086C8C6 /* box2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = box2.jpg; path = ../../../../Downloads/box2.jpg; sourceTree = "<group>"; };
+		8379D76A1EFBC26F0086C8C6 /* fire.scnp */ = {isa = PBXFileReference; lastKnownFileType = file.scp; path = fire.scnp; sourceTree = "<group>"; };
+		8379D76C1EFBC47F0086C8C6 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +123,9 @@
 		8379D7351EFBAD880086C8C6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8379D76A1EFBC26F0086C8C6 /* fire.scnp */,
+				8379D7681EFBAFA10086C8C6 /* box2.jpg */,
+				8379D76C1EFBC47F0086C8C6 /* spark.png */,
 				8379D7361EFBAD880086C8C6 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -207,7 +216,8 @@
 				TargetAttributes = {
 					8379D7311EFBAD880086C8C6 = {
 						CreatedOnToolsVersion = 8.3.3;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = X585696T4B;
+						ProvisioningStyle = Manual;
 					};
 					8379D74A1EFBAD880086C8C6 = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -247,7 +257,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8379D7451EFBAD880086C8C6 /* LaunchScreen.storyboard in Resources */,
+				8379D76D1EFBC47F0086C8C6 /* spark.png in Resources */,
+				8379D76B1EFBC26F0086C8C6 /* fire.scnp in Resources */,
 				8379D7421EFBAD880086C8C6 /* Assets.xcassets in Resources */,
+				8379D7691EFBAFA10086C8C6 /* box2.jpg in Resources */,
 				8379D7401EFBAD880086C8C6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,10 +437,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = X585696T4B;
 				INFOPLIST_FILE = "SceneKit-09/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ShiWenChen.com.SceneKit-09";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "34779f32-976c-48a9-8576-55b1d8bc4e7b";
+				PROVISIONING_PROFILE_SPECIFIER = TestApp;
 			};
 			name = Debug;
 		};
@@ -435,10 +452,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = X585696T4B;
 				INFOPLIST_FILE = "SceneKit-09/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ShiWenChen.com.SceneKit-09";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "34779f32-976c-48a9-8576-55b1d8bc4e7b";
+				PROVISIONING_PROFILE_SPECIFIER = TestApp;
 			};
 			name = Release;
 		};
@@ -507,6 +528,7 @@
 				8379D7611EFBAD880086C8C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8379D7621EFBAD880086C8C6 /* Build configuration list for PBXNativeTarget "SceneKit-09Tests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +537,7 @@
 				8379D7641EFBAD880086C8C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8379D7651EFBAD880086C8C6 /* Build configuration list for PBXNativeTarget "SceneKit-09UITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +546,7 @@
 				8379D7671EFBAD880086C8C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
